@@ -2,11 +2,11 @@
 
 Time series forecasting plays a critical role in various fields such as finance, economics, weather forecasting, and more. One powerful tool in the time series forecasting toolbox is SARIMAX, which stands for Seasonal AutoRegressive Integrated Moving Average with eXogenous regressors. In this article, we will guide you through the process of applying SARIMAX to forecast time series data.
 
-**Step 1: Understand the Data**
+# Step 1: Understand the Data
 
 Before diving into modeling, it's crucial to familiarize yourself with the time series data you're working with. This involves understanding any existing patterns, trends, and potential seasonality in the data.
 
-**Step 2: Install Necessary Libraries**
+# Step 2: Install Necessary Libraries
 
 Ensure you have the required Python libraries installed. These typically include `pandas` for data manipulation, `statsmodels` for time series analysis, and `matplotlib` for plotting.
 
@@ -29,7 +29,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX # SARIMAX model for time 
 from statsmodels.tsa.seasonal import seasonal_decompose # Seasonal decomposition for trend, seasonal, and residual components
 ```
 
-**Step 3: Load and Preprocess Data**
+# Step 3: Load and Preprocess Data
 
 Load the time series data into a suitable data structure, such as a pandas DataFrame or a numpy array. Check for missing values and outliers, and handle them appropriately, either by imputing missing values or removing outliers.
 
@@ -65,7 +65,7 @@ df.reset_index(drop=True, inplace=True)
 df = df[['Date', 'Close']]
 ```
 
-**Step 4: Visualize the Data**
+# Step 4: Visualize the Data
 
 Plotting the time series data provides a visual understanding of its characteristics. This can help in identifying trends, seasonality, and any unusual patterns.
 
@@ -82,7 +82,7 @@ fig1.show()
 ![Alt Text](https://i.ibb.co/XsSJ576/newplot.png)
 
 
-**Step 5: Stationarity**
+# Step 5: Stationarity
 
 Stationarity is a crucial concept in time series forecasting. It refers to a property of a time series where the statistical properties (such as mean, variance, and autocovariance) remain constant over time. In other words, a stationary time series does not exhibit trends or seasonality in its behavior.
 Here are several reasons why stationarity is important in time series forecasting:
